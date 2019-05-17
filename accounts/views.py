@@ -25,7 +25,7 @@ def login_view(request):
             if 'next' in request.POST:
                 return redirect(request.POST.get('next'))
             else:
-                return redirect('articles:list')
+                return redirect('exam:exam_start')
     else:
         form = AuthenticationForm()
     return render(request,'accounts/login.html',{'form':form})

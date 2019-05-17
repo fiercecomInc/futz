@@ -1,8 +1,19 @@
 body{
-  background-color: #000000;
-  background-image: url(/static/gray.jpg);
-  background-repeat-y: no-repeat;
-  color: #d9d9d9;
+  background-color: white;
+  color: black;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 body *{
@@ -15,7 +26,7 @@ h1, h2, h3, h4, h5{
 }
 
 a, a:hover, a:visited{
-  color: #d9d9d9;
+  color: black;
   text-decoration: none;
 }
 
@@ -26,8 +37,7 @@ a, a:hover, a:visited{
 
 div.wrapper > h1{
     text-align: center;
-    margin: 100px auto;
-    font-size: 2.4em
+
 }
 
 header{
@@ -36,9 +46,12 @@ header{
     padding: 20px 0;
 }
 
-nav{
-    justify-self: end;
+nav ul{
+
+    margin-right: 700px;
+
 }
+
 
 nav li {
     display: inline-block;
@@ -48,21 +61,26 @@ nav li {
 
 nav button{
     background: none;
-    color: #fff;
+    color: black;
     cursor: pointer;
     border: 0;
     font-size: 16px;
 }
 
+nav button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
 .articles{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
+    display: list;
+    list-template-columns: 1fr 1fr 1fr;
+    list-gap: 30px;
 }
 
 .article{
     padding: 10px;
-    border: 5px solid #000000;
+    border: 5px double green;
     position: relative;
     padding-bottom: 40px;
 }
@@ -73,12 +91,12 @@ nav button{
 
 .article .author{
     padding: 10px;
-    background: #404040;
+    background: green;
     position: absolute;
     right: 0;
     bottom: 0;
     margin: 0;
-    color: #ffff;
+    color: #fff;
 }
 
 .article-detail .article{
@@ -106,56 +124,70 @@ nav button{
 
 .site-form {
     margin-top: 60px;
-    border: 1px solid #fff;
+    border: 10px double black;
     padding: 20px;
+    background-color: green;
 }
 
 .site-form input, .site-form textarea{
     display: block;
     margin: 20px 0 0px 0;
     padding: 10px;
+
+
 }
 
 
 a.highlight{
-    border: 1px solid #fff;
-    padding: 10px;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 15px
+  border: 2px solid green;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  font-size: 15px
 }
 
+a.highlight:hover {
+  background-color: #4CAF50;
+  color: white;
+}
 a.signup{
-    border: 1px solid #fff;
+    border: 2px solid green;
     padding: 10px;
-    border-radius: 4px;
-    color: #fff;
+    border-radius: 10px;
+    color: black;
     font-size: 15px
-
-
+}
+a.signup:hover {
+  background-color: #4CAF50;
+  color: white;
 }
 
 a.login{
-    border: 1px solid #fff;
-    padding: 10px;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 15px
+  border: 2px solid green;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  font-size: 15px
 }
 
 button.logout{
-    border: 1px solid #fff;
-    padding: 10px;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 15px
+  border: 2px solid green;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  font-size: 15px
+
+}
+a.login:hover {
+  background-color: #4CAF50;
+  color: white;
 }
 
 }
 
 .helptext, .helptext ul{
     margin: 0 auto 20px;
-    color: #fff;
+    color: black;
     font-size: 14px;
     display: block;
 }
@@ -163,9 +195,9 @@ button.logout{
 .errorlist li{
     padding: 10px;
     list-style-type: none;
-    border: 1px solid #FF5722;
+    border: 1px solid black;
     margin: 10px 0;
-    color: #FF5722
+    color: black
 }
 
 .errorlist{
@@ -173,9 +205,9 @@ button.logout{
 }
 
 .site-form input[type="submit"]{
-    background:  #404040;
-    border: 0;
-    color: #fff;
+    background:  white;
+    border: 2 solid;
+    color: black;
     font-size: 20px;
     border-radius: 4px;
     margin: 10px 0;
