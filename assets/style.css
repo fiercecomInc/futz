@@ -169,6 +169,10 @@ a.home:hover {
   color: white;
 }
 
+a.home:hover {
+  background-color: #4CAF50;
+  color: white;
+}
 a.login{
   border: 2px solid green;
   padding: 10px;
