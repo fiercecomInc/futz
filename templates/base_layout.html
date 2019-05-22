@@ -9,14 +9,14 @@
   </head>
 
   <body>
-    <div class="wrapper">
+    <div class="wrapper" >
       <h1>
           <img src="{% static 'j.png' %}" class="center"  style="width:100%;">
           <nav >
             <ul>
               {% if user.is_authenticated %}
                  <li>
-                   <form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
+                   <form class="logout-link" action="{% url 'accounts:logout' %}" method="post" >
                      {% csrf_token %}
                      <button type="submit" class="logout"
                        style="position: absolute;
@@ -27,11 +27,23 @@
                  </li>
 
               {% else %}
+                <li>
+                  <a class="home" href="{% url 'articles:list'%}"
+                  style="position: absolute;
+                  top: 50px;
+                  right: 650px;
+                  border: 2px solid green;
+                  padding: 10px;
+                  border-radius: 10px;
+                  color: black;
+                  font-size: 15px"
+                  >Home</a>
+                </li>
                   <li>
                     <a class="login" href="{% url 'accounts:login'%}"
                     style="position: absolute;
                     top: 50px;
-                    right: 600px;"
+                    right: 580px;"
                     >Login</a>
                   </li>
                   <li>

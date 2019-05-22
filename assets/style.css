@@ -32,7 +32,7 @@ a, a:hover, a:visited{
 
 .wrapper{
     max-width: 960px;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 div.wrapper > h1{
@@ -48,7 +48,7 @@ header{
 
 nav ul{
 
-    margin-right: 700px;
+    *margin-right: 700px;*
 
 }
 
@@ -73,16 +73,18 @@ nav button:hover {
 }
 
 .articles{
-    display: list;
-    list-template-columns: 1fr 1fr 1fr;
-    list-gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
 }
 
 .article{
     padding: 10px;
     border: 5px double green;
-    position: relative;
+    position: absolute;
     padding-bottom: 40px;
+    top: 0px;
+
 }
 
 .article h2{

@@ -88,14 +88,15 @@
 	   	</style>
 	</head>
 	<body style="background-color:white" >
-    <div class="jumbotron" style="  height: 305px; width: 100%;">
+    <div class="jumbotron" style="  height: 250px; width: 100%; top: 10px;">
       <div class="container">
-         <img src="{% static 'j.png' %}"  style="width:90%;">
+         <img class="center"src="{% static 'j.png' %}"  style="width:50%;">
        </div>
      </div>
-		   <div class="container content bg-dark text-white" style="border-radius: 18px 91px 18px 91px;
-			 -moz-border-radius: 18px 91px 18px 91px;
-			 -webkit-border-radius: 18px 91px 18px 91px;border: 20px double white;">
+		   <div class="container content bg-dark text-white" style="border-radius: 21px 21px 21px 21px;
+-moz-border-radius: 21px 21px 21px 21px;
+-webkit-border-radius: 21px 21px 21px 21px;
+border: 22px double #a7e698;">
 		   	  <div class="row justify-content-center">
     				<div class="col-8">
 
@@ -117,6 +118,23 @@
 			    <span class="text-muted">&#169; Fiercecom Incorporated 2019</span>
 			  </div>
 			</footer>
+
+
+			<div class="article">
+				<li>
+					<a class="home" href="{% url 'articles:list'%}"
+					style="position: absolute;
+					top: 75px;
+					right: 700px;
+					border: 2px solid green;
+					padding: 10px;
+					border-radius: 10px;
+					color: black;
+					font-size: 15px"
+					>Home</a>
+				</li>
+			</div>
+
 
 	</body>
 	<script src="/static/js/jquery-3.4.1.min.js"></script>
@@ -921,8 +939,12 @@
 		        return false;
 		    });
 
+				//$("script[src='bootstraps.js']").before('<input type="button"/>')
+
 
 		});
 	     </script>
+
+
 
 </html>
