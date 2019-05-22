@@ -5,6 +5,7 @@ body{
 
 img {
   display: block;
+  margin-top: auto;
   margin-left: auto;
   margin-right: auto;
 }
@@ -32,7 +33,7 @@ a, a:hover, a:visited{
 
 .wrapper{
     max-width: 960px;
-    margin: 50px auto;
+    margin: 0 auto;
 }
 
 div.wrapper > h1{
@@ -48,7 +49,7 @@ header{
 
 nav ul{
 
-    *margin-right: 700px;*
+    margin-right: 700px;
 
 }
 
@@ -81,10 +82,8 @@ nav button:hover {
 .article{
     padding: 10px;
     border: 5px double green;
-    position: absolute;
+    position: relative;
     padding-bottom: 40px;
-    top: 0px;
-
 }
 
 .article h2{
@@ -106,7 +105,7 @@ nav button:hover {
 }
 
 .article-detail  .article img{
-    max-width: 100%;
+    max-width: 50%;
 }
 
 .article-detail  .article h2{
@@ -125,10 +124,11 @@ nav button:hover {
 }
 
 .site-form {
-    margin-top: 60px;
-    border: 10px double black;
+    margin-top: 10px;
+    border: 20px double white;
     padding: 20px;
     background-color: green;
+
 }
 
 .site-form input, .site-form textarea{
@@ -164,6 +164,11 @@ a.signup:hover {
   color: white;
 }
 
+a.home:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
 a.login{
   border: 2px solid green;
   padding: 10px;
@@ -189,7 +194,7 @@ a.login:hover {
 
 .helptext, .helptext ul{
     margin: 0 auto 20px;
-    color: black;
+    color: red;
     font-size: 14px;
     display: block;
 }
@@ -199,7 +204,7 @@ a.login:hover {
     list-style-type: none;
     border: 1px solid black;
     margin: 10px 0;
-    color: black
+    color: red;
 }
 
 .errorlist{
